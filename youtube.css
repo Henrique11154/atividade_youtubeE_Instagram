@@ -1,0 +1,50 @@
+/*estilos*/
+
+#youtube{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+        'barra_h barra_h'
+        'video proximos_videos'
+        'descricao proximos_videos'
+        'comentario proximos_videos';
+    height: 1000px;
+    width: 1200px;
+}
+
+#youtube div{
+    padding: 1em;
+}
+
+#barra_h{
+    grid-area: barra_h;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    background-color: blue;
+}
+
+#descricao{
+    grid-area: descricao;
+    background-color: blueviolet;
+}
+
+.video{
+    height: 100%;
+    width: 50%;
+    grid-area: video;
+    background-color: cadetblue;
+}
+
+#comentario{
+    height: 100%;
+    width: 50%;
+    grid-area: comentario;
+    background-color: yellowgreen;
+}
+
+#proximos_videos{
+    grid-area: proximos_videos;
+    width: 50%;
+    background-color: wheat;
+}
