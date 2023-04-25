@@ -10,6 +10,7 @@
         'comentario proximos_videos';
     height: 1000px;
     width: 1200px;
+    margin: 0 auto;
 }
 
 #youtube div{
@@ -18,33 +19,47 @@
 
 #barra_h{
     grid-area: barra_h;
-    height: 100px;
+    height: 10px;
     width: 100%;
     text-align: center;
-    background-color: blue;
+
 }
 
 #descricao{
     grid-area: descricao;
-    background-color: blueviolet;
+    
 }
 
 .video{
     height: 100%;
     width: 50%;
     grid-area: video;
-    background-color: cadetblue;
+    
 }
 
 #comentario{
     height: 100%;
     width: 50%;
     grid-area: comentario;
-    background-color: yellowgreen;
+    
 }
 
 #proximos_videos{
     grid-area: proximos_videos;
     width: 50%;
-    background-color: wheat;
+    height: 100%;
+}
+
+#barra_h img{
+    width: 20px;
+    height: 20px;
+    margin-left: -100%;
+    align-self: start;
+}
+
+.letras{
+    font-size: 17px;
+    margin-top: -15px;
+    text-align: center;
+    box-shadow: 10px rgba(red, green, blue, alpha);
 }
