@@ -1,4 +1,8 @@
 /*estilos*/
+body, html{
+    margin: 0;
+    padding: 0;
+}
 
 #youtube{
     display: grid;
@@ -8,9 +12,8 @@
         'video proximos_videos'
         'descricao proximos_videos'
         'comentario proximos_videos';
-    height: 1000px;
-    width: 1200px;
-    margin: 0 auto;
+    height: 100%;
+    width: 100%;
 }
 
 #youtube div{
@@ -19,47 +22,59 @@
 
 #barra_h{
     grid-area: barra_h;
-    height: 10px;
+    height: 15px;
     width: 100%;
     text-align: center;
-
+    display: inline-block;
+    background-color: rgb(255, 0, 0);
 }
 
 #descricao{
     grid-area: descricao;
-    
+    background-color: rgb(103, 4, 4);
+    padding: 15px;
+    height: 100%;
+    width: 100%;
 }
 
 .video{
-    height: 100%;
-    width: 50%;
+    height: 95%;
+    width: 100%;
     grid-area: video;
-    
+    background-color: rgb(222, 2, 2);
 }
 
 #comentario{
     height: 100%;
-    width: 50%;
+    width:100%;
     grid-area: comentario;
-    
+    background-color: rgb(144, 5, 5);
 }
 
 #proximos_videos{
     grid-area: proximos_videos;
-    width: 50%;
+    width: 100%;
     height: 100%;
+    background-color: rgb(137, 2, 2);
 }
 
-#barra_h img{
-    width: 20px;
-    height: 20px;
-    margin-left: -100%;
+#pesquisa{
+    margin-top: -45px;
+    box-shadow: inset;
+}
+
+.coment{
+    text-align: justify;
+    font-size: 21;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#menu{
+    width: 25px;
+    height: 30px;
+    margin-left: -99%;
+    margin-top: -10px;
+    /*margin-left: -99%;
     align-self: start;
-}
-
-.letras{
-    font-size: 17px;
-    margin-top: -15px;
-    text-align: center;
-    box-shadow: 10px rgba(red, green, blue, alpha);
+    display: inline-block;*/
 }
