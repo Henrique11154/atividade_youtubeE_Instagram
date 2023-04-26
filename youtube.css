@@ -25,16 +25,26 @@ body, html{
     height: 15px;
     width: 100%;
     text-align: center;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(255, 0, 0);
 }
 
 #descricao{
     grid-area: descricao;
     background-color: rgb(103, 4, 4);
-    padding: 15px;
+    padding: 5px;
     height: 100%;
     width: 100%;
+}
+
+#descricao img{
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    background-color: white;
+    
 }
 
 .video{
@@ -59,22 +69,33 @@ body, html{
 }
 
 #pesquisa{
-    margin-top: -45px;
-    box-shadow: inset;
+    margin-left: auto;
+    margin-right: 950px;
+    border: 1px solid white;
+    border-radius: 20%;
+    background-color: white;
 }
 
 .coment{
     text-align: justify;
     font-size: 21;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
 }
 
 #menu{
     width: 25px;
     height: 30px;
-    margin-left: -99%;
-    margin-top: -10px;
-    /*margin-left: -99%;
-    align-self: start;
-    display: inline-block;*/
+    margin-left: 5px;
+    margin-right: auto;
+}
+
+.coment img{
+    border-radius: 50%;
+    height: 25px;
+    width: 30px;
+}
+
+#like{
+    
 }
