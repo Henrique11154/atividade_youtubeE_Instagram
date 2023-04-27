@@ -14,6 +14,7 @@ body, html{
         'comentario proximos_videos';
     height: 100%;
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #youtube div{
@@ -33,46 +34,58 @@ body, html{
 
 #descricao{
     grid-area: descricao;
-    background-color: rgb(103, 4, 4);
-    padding: 5px;
+    background-color: rgb(152, 84, 84);
     height: 100%;
     width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-area: 
+    'titulo titulo titulo'
+    'foto_de_perfil inscrito like';
 }
 
 #descricao img{
-    height: 45px;
-    width: 45px;
+    height: 30px;
+    width: 30px;
     border-radius: 100%;
     background-color: white;
-    
+}
+
+#descricao b{
+    grid-area: titulo;
+    margin-left: auto;
+    margin-right: 200px;
+    margin-bottom: auto;
+    font-size: 17px;
 }
 
 .video{
     height: 95%;
     width: 100%;
     grid-area: video;
-    background-color: rgb(222, 2, 2);
+    background-color: rgb(52, 1, 1);
 }
 
 #comentario{
     height: 100%;
     width:100%;
     grid-area: comentario;
-    background-color: rgb(144, 5, 5);
+    background-color: rgb(182, 29, 90);
 }
 
 #proximos_videos{
     grid-area: proximos_videos;
-    width: 100%;
+    width: 93%;
     height: 100%;
-    background-color: rgb(137, 2, 2);
+    background-color: rgb(250, 62, 122);
+    margin-left: 30px;
 }
 
 #pesquisa{
     margin-left: auto;
     margin-right: 950px;
     border: 1px solid white;
-    border-radius: 20%;
+    border-radius: 10%;
     background-color: white;
 }
 
@@ -81,6 +94,7 @@ body, html{
     font-size: 21;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
+    border: 1px solid black;
 }
 
 #menu{
@@ -97,5 +111,29 @@ body, html{
 }
 
 #like{
-    
+    grid-area: like;
+    margin-left: 600px;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#icon_dePerfil{
+    grid-area: foto_de_perfil;
+    margin-top: auto;
+    padding: 2em;
+    margin-top: auto;
+}
+
+#inscrever{
+    grid-area: inscrito;
+    margin: 30px auto 20px auto;
+    border: 1px lightgray;
+    border-radius: 35%;
+    border-style: groove;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+
+#inscrever:hover{
+    background-color: lightgray;
 }
